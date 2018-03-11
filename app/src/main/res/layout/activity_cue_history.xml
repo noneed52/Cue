@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="activity" type="com.test.cue.CueHistoryActivity"/>
+    </data>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.test.cue.CueHistoryActivity">
+        <TextView
+            android:id="@+id/cueCardData1Text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:minHeight="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Cue Card Data 1"
+            android:onClick="@{activity::onClickCueCardData}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/cueCardData2Text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:minHeight="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Cue Card Data 2"
+            android:onClick="@{activity::onClickCueCardData}"
+            app:layout_constraintTop_toBottomOf="@+id/cueCardData1Text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/cueCardData3Text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:minHeight="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Cue Card Data 3"
+            android:onClick="@{activity::onClickCueCardData}"
+            app:layout_constraintTop_toBottomOf="@+id/cueCardData2Text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/cueCardData4Text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:minHeight="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Cue Card Data 4"
+            android:onClick="@{activity::onClickCueCardData}"
+            app:layout_constraintTop_toBottomOf="@+id/cueCardData3Text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+</layout>

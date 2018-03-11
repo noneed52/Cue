@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="activity" type="com.test.cue.LandingPageActivity"/>
+    </data>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.test.cue.LandingPageActivity">
+        <Button
+            android:id="@+id/manageAccountBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Manage Account"
+            android:onClick="@{activity::onClickManageAccount}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <Button
+            android:id="@+id/myStatsBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="My Stats"
+            android:onClick="@{activity::onClickMyStats}"
+            app:layout_constraintTop_toBottomOf="@+id/manageAccountBtn"
+            app:layout_constraintLeft_toLeftOf="@+id/manageAccountBtn"
+            app:layout_constraintRight_toRightOf="@+id/manageAccountBtn"/>
+        <Button
+            android:id="@+id/todayCueBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Today's Cue"
+            android:onClick="@{activity::onClickTodayCue}"
+            app:layout_constraintTop_toBottomOf="@+id/myStatsBtn"
+            app:layout_constraintLeft_toLeftOf="@+id/manageAccountBtn"
+            app:layout_constraintRight_toRightOf="@+id/manageAccountBtn"/>
+        <Button
+            android:id="@+id/rescheduleBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Reschedule"
+            android:onClick="@{activity::onClickReschedule}"
+            app:layout_constraintTop_toBottomOf="@+id/todayCueBtn"
+            app:layout_constraintLeft_toLeftOf="@+id/manageAccountBtn"
+            app:layout_constraintRight_toRightOf="@+id/manageAccountBtn"/>
+    </android.support.constraint.ConstraintLayout>
+</layout>
